@@ -1,7 +1,7 @@
-import { Component,OnInit  } from '@angular/core';
-//Se declaran las variables que jquery va usar
-declare var jquery:any;
-declare var $ :any;
+import { Component, OnInit  } from '@angular/core';
+// Se declaran las variables que jquery va usar
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -9,12 +9,13 @@ declare var $ :any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(){
+  photo = 'https://firebasestorage.googleapis.com/v0/b/portfolio-a3e4e.appspot.com/o/13662129_1191084747609255_5184517875363444775_o.jpg?alt=media&token=656bd179-b513-4b48-ba50-6c925973c8c6';
+  constructor() {
 
   }
 
-  ngOnInit(){  
-       
+  ngOnInit() {
+
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -5,6 +5,9 @@
 /dist-server
 /tmp
 /out-tsc
+/docs
+
+package-lock.json
 
 # dependencies
 /node_modules
